@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>📝 To-Do List</h1>
+
+            <p>Organize your daily tasks efficiently</p>
+
+        </header>
+
+        <section class="todo-app">
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a new task..."
+                    autocomplete="off">
+
+                <button id="addTaskBtn">
+                    Add Task
+                </button>
+
+            </div>
+
+            <div class="tools">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search tasks...">
+
+                <select id="filterSelect">
+
+                    <option value="all">
+                        All Tasks
+                    </option>
+
+                    <option value="pending">
+                        Pending
+                    </option>
+
+                    <option value="completed">
+                        Completed
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="stats">
+
+                <div class="card">
+
+                    <h3>Total</h3>
+
+                    <p id="totalTasks">
+                        0
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Pending</h3>
+
+                    <p id="pendingTasks">
+                        0
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Completed</h3>
+
+                    <p id="completedTasks">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+            <ul id="taskList">
+
+                <!-- Tasks will be inserted here -->
+
+            </ul>
+
+            <div class="bottom-controls">
+
+                <button id="clearCompleted">
+
+                    Clear Completed
+
+                </button>
+
+                <button id="deleteAll">
+
+                    Delete All
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
