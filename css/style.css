@@ -211,3 +211,42 @@ header h1{
 }
 
 }
+
+#themeToggle{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#222;
+    color:#fff;
+    cursor:pointer;
+}
+
+body.dark{
+    background:linear-gradient(135deg,#111827,#1f2937);
+}
+
+body.dark .todo-app{
+    background:#1e293b;
+    color:#ffffff;
+}
+
+body.dark .card{
+    background:#334155;
+}
+
+body.dark .task{
+    background:#475569;
+    color:#ffffff;
+}
+
+body.dark input,
+body.dark select{
+    background:#1f2937;
+    color:#ffffff;
+    border:1px solid #555;
+}
+
+body.dark input::placeholder{
+    color:#cccccc;
+}
